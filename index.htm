@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Científicas STEM</title>
+  <style>
+    .seccion {
+      display: none;
+    }
+  </style>
+  <script>
+    function mostrar(id) {
+      document.getElementById("portada").style.display = "none";
+      document.getElementById("ana").style.display = "none";
+      document.getElementById("sara").style.display = "none";
+      document.getElementById(id).style.display = "block";
+      window.scrollTo(0, 0);
+    }
+
+    function volverPortada() {
+      document.getElementById("portada").style.display = "block";
+      document.getElementById("ana").style.display = "none";
+      document.getElementById("sara").style.display = "none";
+      window.scrollTo(0, 0);
+    }
+  </script>
+</head>
+<body bgcolor="#E6F0FA">
+
+<!-- PORTADA -->
+<div id="portada">
+  <center>
+    <h1 style="color: #2E4053;">Referentes femeninos en STEM</h1>
+    <table>
+      <tr>
+        <td style="text-align: center; padding: 20px;">
+          <a href="#" onclick="mostrar('ana')">
+            <img src="ana.jpg" alt="Ana C. Gómez" width="250"><br>
+            <strong>Ana C. Gómez</strong>
+          </a>
+        </td>
+        <td style="text-align: center; padding: 20px;">
+          <a href="#" onclick="mostrar('sara')">
+            <img src="sara.jpg" alt="Sara Alvarellos" width="250"><br>
+            <strong>Sara Alvarellos</strong>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </center>
+</div>
+
+<!-- SECCIÓN ANA -->
+<div id="ana" class="seccion">
+  <center>
+    <h1 style="color: #2E4053;">Ana C. Gómez</h1>
+    <img src="ana.jpg" alt="Ana C. Gómez" width="250"><br><br>
+
+    <h2>Índice</h2>
+    <p>
+      <a href="#trayectoria-ana">Trayectoria</a> |
+      <a href="#reconocimientos-ana">Reconocimientos</a> |
+      <a href="#compromiso-ana">Compromiso social</a> |
+      <a href="#video-ana">Video</a> |
+      <a href="#" onclick="volverPortada()">Volver a la portada</a>
+    </p>
+
+    <h2 id="trayectoria-ana">Trayectoria</h2>
+    <p style="width: 80%; font-size: 18px; text-align: justify;">
+      Ana C. Gómez es una profesional del marketing y la comunicación digital. Actualmente trabaja como directora de relaciones para agencias en TikTok España y Portugal. Su carrera se ha desarrollado en empresas como Google, donde impulsó campañas digitales responsables y creativas.
+    </p>
+
+    <h2 id="reconocimientos-ana">Reconocimientos</h2>
+    <p style="width: 80%; font-size: 18px; text-align: justify;">
+      Ha sido ponente en congresos sobre igualdad y tecnología, como la Jornada de Competencias Digitales del Instituto de las Mujeres. En 2023, fue reconocida como una de las voces destacadas en innovación comunicativa inclusiva.
+    </p>
+
+    <h2 id="compromiso-ana">Compromiso social</h2>
+    <p style="width: 80%; font-size: 18px; text-align: justify;">
+      Ana trabaja por un entorno digital inclusivo y ético. Mentoriza a jóvenes interesadas en comunicación y defiende una publicidad que represente a todos los colectivos. Participa en programas como #MujeresTech.
+    </p>
+
+    <h2 id="video-ana">Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EbHWh-XCGH4" frameborder="0" allowfullscreen></iframe>
+
+    <br><br>
+    <a href="#" onclick="volverPortada()">Volver a la portada</a>
+  </center>
+</div>
+
+<!-- SECCIÓN SARA -->
+<div id="sara" class="seccion">
+  <center>
+    <h1 style="color: #2E4053;">Sara Alvarellos</h1>
+    <img src="sara.jpg" alt="Sara Alvarellos" width="250"><br><br>
+
+    <h2>Índice</h2>
+    <p>
+      <a href="#trayectoria-sara">Trayectoria</a> |
+      <a href="#reconocimientos-sara">Reconocimientos</a> |
+      <a href="#compromiso-sara">Compromiso social</a> |
+      <a href="#video-sara">Video</a> |
+      <a href="#" onclick="volverPortada()">Volver a la portada</a>
+    </p>
+
+    <h2 id="trayectoria-sara">Trayectoria</h2>
+    <p style="width: 80%; font-size: 18px; text-align: justify;">
+      Ingeniera informática especializada en accesibilidad y ética tecnológica. Estudió en la Universidad de A Coruña y ha liderado proyectos centrados en la inclusión digital. Mentora de Technovation Girls y promotora de vocaciones STEM en niñas.
+    </p>
+
+    <h2 id="reconocimientos-sara">Reconocimientos</h2>
+    <p style="width: 80%; font-size: 18px; text-align: justify;">
+      Finalista en los Premios Galegos á Innovación Social, reconocida por el programa europeo Women4Tech. Su plataforma AccesClick ha sido adoptada por organismos públicos como solución de accesibilidad digital.
+    </p>
+
+    <h2 id="compromiso-sara">Compromiso social</h2>
+    <p style="width: 80%; font-size: 18px; text-align: justify;">
+      Enseña competencias digitales a colectivos vulnerables y fundó el blog “Código con Conciencia”. Defiende una tecnología centrada en las personas y respetuosa con los derechos digitales.
+    </p>
+
+    <h2 id="video-sara">Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8BzqDJGFWSk" frameborder="0" allowfullscreen></iframe>
+
+    <br><br>
+    <a href="#" onclick="volverPortada()">Volver a la portada</a>
+  </center>
+</div>
+
+</body>
+</html>
